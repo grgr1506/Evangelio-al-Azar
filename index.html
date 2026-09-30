@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evangelio al azar</title>
+  <meta name="author" content="Gonzalo Galindo Ramos">
+  <meta name="description" content="El Evangelio de la misa de un día al azar, para hacer Lectio Divina: subraya, escribe libremente y descarga tu página.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fbf7ee'/%3E%3Cpath d='M16 5v22M9 12h14' stroke='%237a5c4b' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Caveat:wght@500;600;700&family=Kalam:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-dice" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="9" r="1.3" fill="currentColor"/><circle cx="15" cy="15" r="1.3" fill="currentColor"/><circle cx="15" cy="9" r="1.3" fill="currentColor"/><circle cx="9" cy="15" r="1.3" fill="currentColor"/></symbol>
+    <symbol id="i-bold" viewBox="0 0 24 24"><path d="M7 5h6a3.5 3.5 0 0 1 0 7H7zM7 12h7a3.5 3.5 0 0 1 0 7H7z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-italic" viewBox="0 0 24 24"><path d="M10 5h8M6 19h8M14 5l-4 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-underline" viewBox="0 0 24 24"><path d="M7 4v7a5 5 0 0 0 10 0V4M5 20h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-heading" viewBox="0 0 24 24"><path d="M6 5v14M16 5v14M6 12h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M19.5 13.5l1.5-1v6.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="4.5" cy="6" r="1.3" fill="currentColor"/><circle cx="4.5" cy="12" r="1.3" fill="currentColor"/><circle cx="4.5" cy="18" r="1.3" fill="currentColor"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M6 17c-1-1-1.5-2.3-1.5-4 0-3 2-5.5 5-6.5l.5 1.3c-1.8.8-2.8 2.2-2.9 3.7H10V17zM14 17c-1-1-1.5-2.3-1.5-4 0-3 2-5.5 5-6.5l.5 1.3c-1.8.8-2.8 2.2-2.9 3.7H18V17z" fill="currentColor"/></symbol>
+    <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 14L4 9l5-5M4 9h10a6 6 0 0 1 0 12h-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-redo" viewBox="0 0 24 24"><path d="M15 14l5-5-5-5M20 9H10a6 6 0 0 0 0 12h3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clear" viewBox="0 0 24 24"><path d="M5 5l14 14M9 5h9M12 5l-4 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16v4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-eraser" viewBox="0 0 24 24"><path d="M8 20h12M5 15l9-9 5 5-8 8H8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><path d="M9 9h10v11H9zM5 15V4h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="5" width="4" height="14" fill="currentColor"/><rect x="14" y="5" width="4" height="14" fill="currentColor"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 15V4m0 0L8 8m4-4l4 4M5 13v6h14v-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V5m0 0L7.5 9.5M12 5l4.5 4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <a class="skip" href="#text">Saltar al Evangelio</a>
+
+  <!-- Cabecera -->
+  <header class="masthead">
+    <div class="masthead-in">
+      <a class="brand" href="#" aria-label="Evangelio al azar, inicio"><span class="brand-cross" aria-hidden="true">✠</span> Evangelio <i>al azar</i></a>
+      <nav class="mast-nav" aria-label="Herramientas">
+        <button class="mlink" id="btnGuide" aria-expanded="false" aria-controls="guide">Guía de Lectio</button>
+        <button class="mlink" id="btnMusic" aria-expanded="false" aria-controls="music">Música<span class="dot" hidden></span></button>
+        <button class="mlink" id="btnJournal">Mi diario</button>
+        <button class="mlink mlink-strong" id="btnExport">Descargar</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cinta de herramientas (como en un procesador de texto) -->
+  <div class="ribbon" role="toolbar" aria-label="Elegir día y dar formato a mis notas">
+    <div class="ribbon-in">
+      <div class="rb-group" aria-label="Elegir el Evangelio">
+        <button class="rb-btn rb-main" id="btnRandom" title="El Evangelio de la misa de un día al azar (tecla R)"><svg><use href="#i-dice"/></svg><span>Otro día al azar</span></button>
+        <button class="rb-btn" id="btnToday">Hoy</button>
+        <label class="rb-date"><span class="sr">Fecha</span><input type="date" id="datePick" min="1970-01-01" max="2100-12-31" aria-label="Ir a la misa de una fecha"></label>
+      </div>
+      <div class="rb-group" id="fmtBar" aria-label="Formato de mis notas">
+        <button class="rb-ico" data-cmd="bold" title="Negrita (Ctrl+B)" aria-label="Negrita"><svg><use href="#i-bold"/></svg></button>
+        <button class="rb-ico" data-cmd="italic" title="Cursiva (Ctrl+I)" aria-label="Cursiva"><svg><use href="#i-italic"/></svg></button>
+        <button class="rb-ico" data-cmd="underline" title="Subrayado (Ctrl+U)" aria-label="Subrayado"><svg><use href="#i-underline"/></svg></button>
+        <span class="rb-sep"></span>
+        <button class="rb-ico" data-cmd="heading" title="Título" aria-label="Título"><svg><use href="#i-heading"/></svg></button>
+        <button class="rb-ico" data-cmd="insertUnorderedList" title="Lista" aria-label="Lista"><svg><use href="#i-list"/></svg></button>
+        <button class="rb-ico" data-cmd="quote" title="Cita" aria-label="Cita"><svg><use href="#i-quote"/></svg></button>
+        <span class="rb-sep"></span>
+        <span class="rb-marks" id="fmtMarks" aria-label="Resaltar"></span>
+        <button class="rb-ico" data-cmd="removeFormat" title="Quitar formato" aria-label="Quitar formato"><svg><use href="#i-clear"/></svg></button>
+        <span class="rb-sep"></span>
+        <button class="rb-ico" data-cmd="undo" title="Deshacer (Ctrl+Z)" aria-label="Deshacer"><svg><use href="#i-undo"/></svg></button>
+        <button class="rb-ico" data-cmd="redo" title="Rehacer (Ctrl+Y)" aria-label="Rehacer"><svg><use href="#i-redo"/></svg></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- El libro abierto -->
+  <main class="desk">
+    <div class="book" id="book">
+      <!-- Página izquierda: el Evangelio -->
+      <article class="leaf leaf-left" id="page" aria-labelledby="title">
+        <figure class="plate">
+          <img id="artImg" alt="" width="600" height="360">
+          <figcaption id="artCaption"></figcaption>
+        </figure>
+
+        <header class="leaf-head">
+          <p class="rubric" id="kicker">&nbsp;</p>
+          <h1 class="day-title" id="title">&nbsp;</h1>
+        </header>
+
+        <p class="incipit"><span class="accent">✠</span> Lectura del santo Evangelio según <span id="bookName">san Lucas</span></p>
+        <div class="gospel" id="text" aria-label="Texto del Evangelio"></div>
+        <p class="explicit">Palabra del Señor.</p>
+
+        <section class="footnotes" id="footnotes" aria-label="Mis notas al margen" hidden>
+          <h2 class="fn-head">Notas al margen</h2>
+          <ol id="fnList"></ol>
+        </section>
+
+        <footer class="leaf-foot">
+          <label class="trans" id="transWrap">Traducción
+            <select id="transPick">
+              <option value="bll">Biblia libre Latinoamericana</option>
+              <option value="lpd">Libro del Pueblo de Dios (±30 días de hoy)</option>
+            </select>
+          </label>
+          <span id="translation"></span>
+          <button class="textlink" id="btnPaste">¿Prefieres tu Biblia de Jerusalén? Pega aquí su texto</button>
+        </footer>
+      </article>
+
+      <!-- Página derecha: mis notas -->
+      <section class="leaf leaf-right" aria-labelledby="notesHead">
+        <header class="leaf-head">
+          <p class="rubric" id="notesHead">Mis notas</p>
+          <p class="notes-hint">Escribe con libertad. Si te ayuda, abre la <button class="textlink" id="btnGuide2">Guía de Lectio</button>.</p>
+        </header>
+        <div class="editor" id="editor" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Mis notas" data-placeholder="¿Qué te dice hoy esta Palabra?"></div>
+        <footer class="epigraph" id="saintCard">
+          <blockquote>
+            <p id="saintText"></p>
+            <cite><span id="saintAuthor"></span><span id="saintSource"></span></cite>
+          </blockquote>
+          <button class="textlink" id="btnSaint">otra frase</button>
+        </footer>
+        <p class="saved" id="savedNote" aria-live="polite"></p>
+      </section>
+    </div>
+
+    <!-- Comentario del día (si existe) -->
+    <section class="commentary" id="commentBox" hidden>
+      <p class="rubric">Comentario del día</p>
+      <h2 id="commentTitle"></h2>
+      <p class="c-author" id="commentAuthor"></p>
+      <div class="c-text" id="commentText"></div>
+      <button class="textlink" id="btnCommentMore">Leer completo</button>
+      <p class="c-saints" id="saintsDay" hidden></p>
+      <p class="c-attr">Comentario y santos del día: <a href="https://evangeliodeldia.org/SP/gospel" target="_blank" rel="noopener">evangeliodeldia.org</a></p>
+    </section>
+
+    <p class="colophon">© 2026 Gonzalo Galindo Ramos · Evangelio al azar. Textos bíblicos: Biblia libre Latinoamericana (dominio público, eBible.org) o Libro del Pueblo de Dios (vía evangeliodeldia.org). Pinturas de dominio público (Wikimedia Commons). Tus notas se guardan solo en este navegador.</p>
+  </main>
+
+  <!-- Guía de Lectio (solo informativa) -->
+  <aside class="drawer" id="guide" aria-label="Guía de Lectio Divina" hidden>
+    <header class="drawer-head">
+      <h2>Guía de Lectio Divina</h2>
+      <button class="icon-btn" data-close-drawer aria-label="Cerrar guía"><svg><use href="#i-x"/></svg></button>
+    </header>
+    <p class="drawer-intro">Cinco momentos para orar con el Evangelio. No son un examen: tómalos como una ayuda y escribe a tu ritmo.</p>
+    <ol class="guide-list" id="guideList"></ol>
+  </aside>
+
+  <!-- Música -->
+  <aside class="drawer drawer-music" id="music" aria-label="Música para orar" hidden>
+    <header class="drawer-head">
+      <h2>Canto gregoriano</h2>
+      <button class="icon-btn" data-close-drawer aria-label="Cerrar música"><svg><use href="#i-x"/></svg></button>
+    </header>
+    <div class="music-list" id="musicList"></div>
+    <div class="music-frame" id="musicFrame"></div>
+    <form class="music-custom" id="musicForm">
+      <label class="sr" for="musicUrl">Enlace de Spotify o YouTube</label>
+      <input type="url" id="musicUrl" placeholder="Pega un enlace de Spotify o YouTube">
+      <button class="btn" type="submit">Usar</button>
+    </form>
+    <p class="small muted" id="musicNote">Para oír las canciones completas, inicia sesión en Spotify en este navegador. Sigue sonando aunque cierres el panel.</p>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <!-- Barra flotante de subrayado del Evangelio -->
+  <div class="hl-toolbar" id="hlToolbar" role="toolbar" aria-label="Subrayar" hidden>
+    <div class="swatches" id="swatches"></div>
+    <span class="sep"></span>
+    <button class="tb-btn" id="tbNote" title="Escribir una nota al margen"><svg><use href="#i-pen"/></svg><span>Nota</span></button>
+    <button class="tb-btn" id="tbCopy" title="Llevar a mis notas"><svg><use href="#i-copy"/></svg><span>A mis notas</span></button>
+    <button class="tb-btn tb-icon" id="tbErase" title="Quitar subrayado" aria-label="Quitar subrayado"><svg><use href="#i-eraser"/></svg></button>
+  </div>
+
+  <div class="note-pop" id="notePop" hidden>
+    <p class="note-quote" id="noteQuote"></p>
+    <label class="sr" for="noteInput">Nota al margen</label>
+    <textarea id="noteInput" rows="3" placeholder="Un significado, una pregunta, una cita…"></textarea>
+    <div class="note-actions">
+      <span class="small muted">Se guarda sola</span>
+      <button class="btn btn-primary" id="noteDone">Listo</button>
+    </div>
+  </div>
+
+  <!-- Diario -->
+  <dialog class="dlg" id="journal" aria-labelledby="journalTitle">
+    <div class="dlg-in">
+      <header class="dlg-head">
+        <h2 id="journalTitle">Mi diario</h2>
+        <button class="icon-btn" data-close aria-label="Cerrar"><svg><use href="#i-x"/></svg></button>
+      </header>
+      <ul class="journal-list" id="journalList"></ul>
+      <p class="muted" id="journalEmpty">Aún no hay nada. Cuando subrayes o escribas, tu lectio se guardará aquí.</p>
+    </div>
+  </dialog>
+
+  <!-- Pegar texto propio -->
+  <dialog class="dlg" id="pasteDlg" aria-labelledby="pasteTitle">
+    <form class="dlg-in" method="dialog" id="pasteForm">
+      <header class="dlg-head">
+        <h2 id="pasteTitle">Usar el texto de mi Biblia</h2>
+        <button class="icon-btn" type="button" data-close aria-label="Cerrar"><svg><use href="#i-x"/></svg></button>
+      </header>
+      <p class="muted small">La Biblia de Jerusalén tiene derechos de autor y no está disponible libremente, así que no puede venir incluida. Si tienes la tuya (impresa o digital), copia aquí <strong id="pasteRef"></strong> y se usará en esta lectio. Si incluyes los números de versículo, se respetan.</p>
+      <label class="field"><span>Traducción</span><input type="text" id="pasteName" value="Biblia de Jerusalén" maxlength="60"></label>
+      <label class="field"><span>Texto</span><textarea id="pasteText" rows="10" placeholder="57 Mientras iban caminando, uno le dijo…"></textarea></label>
+      <div class="dlg-actions">
+        <button class="btn" type="button" id="pasteReset">Volver al texto original</button>
+        <button class="btn btn-primary" type="submit" id="pasteOk">Usar este texto</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Exportar -->
+  <dialog class="dlg dlg-wide" id="exportDlg" aria-labelledby="exHeading">
+    <div class="dlg-in export">
+      <div class="export-preview"><canvas id="cardCanvas" aria-label="Vista previa"></canvas></div>
+      <div class="export-controls">
+        <header class="dlg-head">
+          <h2 id="exHeading">Descargar</h2>
+          <button class="icon-btn" data-close aria-label="Cerrar"><svg><use href="#i-x"/></svg></button>
+        </header>
+        <div class="tabs" id="exKind" role="tablist">
+          <button role="tab" data-v="study" aria-selected="true">Página de estudio</button>
+          <button role="tab" data-v="estampa" aria-selected="false">Estampa</button>
+          <button role="tab" data-v="md" aria-selected="false">Texto (.md)</button>
+        </div>
+        <p class="ex-help" id="exHelp"></p>
+
+        <div class="ex-group" data-kind="study">
+          <div class="field"><span>Versículos</span>
+            <div class="range-row"><select id="exFrom" aria-label="Desde"></select><span class="muted">hasta</span><select id="exTo" aria-label="Hasta"></select></div>
+          </div>
+          <div class="field"><span>Tamaño</span>
+            <div class="seg" id="exSize"><button data-v="full" aria-pressed="true">Página completa</button><button data-v="post" aria-pressed="false">Post 4:5</button><button data-v="story" aria-pressed="false">Historia 9:16</button></div>
+          </div>
+          <div class="field"><span>Papel y letra</span>
+            <div class="row-2">
+              <div class="seg" id="exTheme"><button data-v="papel" aria-pressed="true">Papel</button><button data-v="pergamino" aria-pressed="false">Pergamino</button></div>
+              <div class="seg" id="exFont"><button data-v="hand" aria-pressed="true">Manuscrita</button><button data-v="serif" aria-pressed="false">De libro</button></div>
+            </div>
+          </div>
+          <div class="checks">
+            <label><input type="checkbox" id="exNotes" checked> Notas al margen con flechas</label>
+            <label><input type="checkbox" id="exRefl" checked> Mis notas debajo del texto</label>
+            <label><input type="checkbox" id="exNums" checked> Números de versículo</label>
+          </div>
+        </div>
+
+        <div class="ex-group" data-kind="estampa" hidden>
+          <label class="field"><span>Frase</span><select id="exPhrase"></select></label>
+          <label class="field" id="exCustomWrap" hidden><span>Tu frase</span><textarea id="exCustom" rows="2" maxlength="220"></textarea></label>
+          <div class="field"><span>Imagen</span>
+            <div class="art-grid" id="exArt"></div>
+            <label class="upload"><input type="file" id="exUpload" accept="image/*"><svg><use href="#i-upload"/></svg><span>Usar una foto mía</span></label>
+          </div>
+          <div class="field"><span>Estilo y tamaño</span>
+            <div class="row-2">
+              <div class="seg" id="exEStyle"><button data-v="clara" aria-pressed="true">Estampita</button><button data-v="oscura" aria-pressed="false">Sobre la pintura</button></div>
+              <div class="seg" id="exESize"><button data-v="story" aria-pressed="true">Historia</button><button data-v="post" aria-pressed="false">Post</button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ex-group" data-kind="md" hidden>
+          <p class="muted">Un archivo de texto con el Evangelio, tus subrayados, tus notas al margen y todo lo que escribiste. Se abre con Word, Notion o cualquier editor.</p>
+        </div>
+
+        <label class="field" id="exNameWrap"><span>Firma (opcional)</span><input type="text" id="exName" maxlength="40" placeholder="Tu nombre"></label>
+        <div class="dlg-actions">
+          <button class="btn" id="exShare" hidden><svg><use href="#i-share"/></svg><span>Compartir</span></button>
+          <button class="btn btn-primary" id="exDownload"><svg><use href="#i-download"/></svg><span>Descargar</span></button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Confirmación -->
+  <dialog class="dlg dlg-small" id="confirmDlg" aria-labelledby="confirmMsg">
+    <div class="dlg-in">
+      <p class="confirm-msg" id="confirmMsg"></p>
+      <div class="dlg-actions">
+        <button class="btn" type="button" id="confirmCancel">Cancelar</button>
+        <button class="btn btn-primary" type="button" id="confirmOk">Continuar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="data/gospels.js"></script>
+  <script src="data/lectionary.js"></script>
+  <script src="data/titles.js"></script>
+  <script src="data/liturgy.js"></script>
+  <script src="data/saints.js"></script>
+  <script src="data/art.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
